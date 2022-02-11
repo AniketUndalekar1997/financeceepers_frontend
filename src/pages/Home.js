@@ -9,7 +9,6 @@ function Home(props) {
 
     useEffect(() => {
         const userHasSession = hasSession();
-
         if (!userHasSession) {
             navigate('/login');
         }
